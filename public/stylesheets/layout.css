@@ -1,9 +1,15 @@
+h1#page-title {
+  font-size: 55px; }
+
 div.soundbyte {
   height: 200px;
   background: #dddddd;
   margin-bottom: 20px;
   text-align: center;
   position: relative; }
+  div.soundbyte h3 {
+    line-height: 24px;
+    margin-top: 10px; }
   div.soundbyte a.play {
     display: block;
     width: 48px;

@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Wed, 21 Dec 2011 02:50:00 GMT from
+/* DO NOT MODIFY. This file was compiled Wed, 21 Dec 2011 04:34:03 GMT from
  * /Users/swilliams/code/5by5Sounds/app/coffeescripts/app/models.coffee
  */
 
@@ -16,6 +16,21 @@
     }
 
     SoundByte.prototype.initialize = function(attributes, options) {};
+
+    SoundByte.prototype.createPlayer = function() {
+      var self;
+      self = this;
+      return $("#player-" + this.attributes.filename).jPlayer({
+        ready: function(event) {
+          return $(this).jPlayer('setMedia', {
+            m4a: "/audio/" + self.attributes.filename + ".m4a",
+            oga: "/audio/" + self.attributes.filename + ".ogg"
+          });
+        },
+        swfPath: "/javascripts/Vendor",
+        supplied: "m4a, oga"
+      });
+    };
 
     return SoundByte;
 

@@ -53,16 +53,17 @@
     <script type="text/template" id="soundbyte_template">
         <div class="span4 soundbyte {{speaker}}" data-file="{{filename}}">
             <h3>{{title}}</h3>
-            <a href="#play" class="play"><span>Play</span></a>
-            <cite><a href="{{url}}">{{show}}</cite>
+            <a href="#play" class="play">
+                <span>Play</span>
+            </a>
+            <cite>From: <a href="{{url}}">{{show}}</a></cite>
             <div id="player-{{filename}}"></div>
         </div>
-
     </script>
 
   <div class="container">
       <div class="hero-unit">
-          <h1>The <span class="un">Unofficial</span> 5by5 Soundboard</h1>
+          <h1 id="page-title">The <span class="un">Unofficial</span> 5by5 Soundboard</h1>
           <h5>(Of Doom)</h5>
       </div>
 
@@ -76,6 +77,9 @@
 
   </div> <!--! end of #container -->
 
+  <footer>
+    All code is &copy; 2011 Scott Williams. All soundbytes used are property of 5by5 Corporation. Avatars are from the respective peoples' Twitter accounts or websites. Used without permission. Don't be creepy.
+  </footer>
   <!-- JavaScript at the bottom for fast page loading -->
 
 

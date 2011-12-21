@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Wed, 21 Dec 2011 03:16:01 GMT from
+/* DO NOT MODIFY. This file was compiled Wed, 21 Dec 2011 04:26:32 GMT from
  * /Users/swilliams/code/5by5Sounds/app/coffeescripts/app/views.coffee
  */
 
@@ -20,19 +20,30 @@
 
       SoundBytesView.prototype.template = Handlebars.compile($('#soundbyte_template').html());
 
-      SoundBytesView.prototype.initialize = function() {
-        return this.collection.bind('add', this.render, this);
+      SoundBytesView.prototype.initialize = function() {};
+
+      SoundBytesView.prototype.events = {
+        'click .play': 'play'
       };
 
       SoundBytesView.prototype.render = function() {
         var soundbyte, _i, _len, _ref;
         $(this.el).html('');
-        _ref = this.collection.toJSON();
+        _ref = this.collection.models;
         for (_i = 0, _len = _ref.length; _i < _len; _i++) {
           soundbyte = _ref[_i];
-          $(this.el).append(this.template(soundbyte));
+          $(this.el).append(this.template(soundbyte.toJSON()));
+          if (soundbyte.attributes.filename !== '') soundbyte.createPlayer();
         }
         return this;
+      };
+
+      SoundBytesView.prototype.play = function(event) {
+        var byte, elem;
+        elem = $(event.target).parents('div.soundbyte');
+        byte = elem.attr('data-file');
+        $("#player-" + byte).jPlayer('play');
+        return event.preventDefault();
       };
 
       return SoundBytesView;

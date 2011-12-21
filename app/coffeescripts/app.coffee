@@ -6,41 +6,70 @@ jQuery ->
         new app.SoundByte {
             title: 'Gruber Eating'
             filename: 'gruber-eating'
-            show: 'The Talk Show #71'
-            url: 'http://5by5.tv/talkshow/71'
+            show: 'The Talk Show'
+            url: 'http://5by5.tv/talkshow'
             speaker: 'Gruber'
         }
         new app.SoundByte {
             title: "Hi I'm Merlin Mann!"
-            filename: ''
-            show: 'Back to Work #46'
-            url: 'http://5by5.tv/b2w/46'
+            filename: 'hi-im-merlin'
+            show: 'Back to Work'
+            url: 'http://5by5.tv/b2w'
             speaker: 'Dan'
         }
         new app.SoundByte {
             title: 'Bulk Bag'
-            filename: ''
-            show: 'Back to Work #45'
-            url: 'http://5by5.tv/b2w/45'
+            filename: 'bulkbag'
+            show: 'Back to Work'
+            url: 'http://5by5.tv/b2w'
             speaker: 'Dan'
         }
         new app.SoundByte {
             title: 'Terp-stra'
-            filename: ''
-            show: 'Back to Work #44'
-            url: 'http://5by5.tv/b2w/44'
+            filename: 'terpstra'
+            show: 'Back to Work'
+            url: 'http://5by5.tv/b2w'
             speaker: 'Dan'
         }
         new app.SoundByte {
             title: 'Hi!'
-            filename: ''
-            show: 'Back to Work #44'
-            url: 'http://5by5.tv/b2w/44'
+            filename: 'hi'
+            show: 'Back to Work'
+            url: 'http://5by5.tv/b2w'
+            speaker: 'Merlin'
+        }
+        new app.SoundByte {
+            title: 'Big Week!'
+            filename: 'bigweek'
+            show: 'Back to Work'
+            url: 'http://5by5.tv/b2w'
+            speaker: 'Dan'
+        }
+        new app.SoundByte {
+            title: 'We Make the Internet Work'
+            filename: 'wemaketheinternet'
+            show: 'Back to Work'
+            url: 'http://5by5.tv/b2w'
+            speaker: 'Dan'
+        }
+        new app.SoundByte {
+            title: 'Can I Aks You a Question?'
+            filename: 'aksquestion'
+            show: 'Back to Work'
+            url: 'http://5by5.tv/b2w'
+            speaker: 'Merlin'
+        }
+        new app.SoundByte {
+            title: '*Giggle*'
+            filename: 'merlingiggle'
+            show: 'Back to Work'
+            url: 'http://5by5.tv/b2w'
             speaker: 'Merlin'
         }
     ]
 
     window.bytes = bytes
+    @app.SoundBytes.add bytes
 
     @app.router = new app.AppRouter()
     if Modernizr.history
@@ -48,5 +77,4 @@ jQuery ->
     else
         Backbone.history.start()
     
-    @app.SoundBytes.add bytes
 

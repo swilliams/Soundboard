@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Wed, 21 Dec 2011 03:15:31 GMT from
+/* DO NOT MODIFY. This file was compiled Wed, 21 Dec 2011 04:21:39 GMT from
  * /Users/swilliams/code/5by5Sounds/app/coffeescripts/app/routers.coffee
  */
 
@@ -21,9 +21,10 @@
       };
 
       AppRouter.prototype.initialize = function() {
-        return this.view = new app.SoundBytesView({
+        this.view = new app.SoundBytesView({
           collection: app.SoundBytes
         });
+        return this.view.render();
       };
 
       AppRouter.prototype.root = function() {};

@@ -5,6 +5,7 @@ jQuery ->
 
         initialize: ->
             @view = new app.SoundBytesView collection: app.SoundBytes
+            @view.render()
         root: ->
 
 
