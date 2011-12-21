@@ -51,9 +51,9 @@
 <body>
 
     <script type="text/template" id="soundbyte_template">
-        <div class="span4 soundbyte" data-file="{{filename}}">
-            <h2>{{title}}</h2>
-            <a href="#play" class="play">Play</a>
+        <div class="span4 soundbyte {{speaker}}" data-file="{{filename}}">
+            <h3>{{title}}</h3>
+            <a href="#play" class="play"><span>Play</span></a>
             <cite><a href="{{url}}">{{show}}</cite>
             <div id="player-{{filename}}"></div>
         </div>

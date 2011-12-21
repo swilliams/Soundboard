@@ -1,3 +1,34 @@
-div.thing
+div.soundbyte
     height: 200px
     background: #ddd
+    margin-bottom: 20px
+    text-align: center
+    position: relative
+
+    a.play
+        display: block
+        width: 48px
+        height: 48px
+        position: absolute
+        left: 50%
+        top: 50%
+        margin-top: -24px
+        margin-left: -24px
+
+        span
+            visibility: hidden
+
+    cite
+        display: block
+        position: absolute
+        bottom: 10px
+        width: 100%
+
+div.soundbyte.Dan a.play
+    background: url('/images/Dan.png') top left no-repeat
+
+div.soundbyte.Merlin a.play
+    background: url('/images/Merlin.png') top left no-repeat
+
+div.soundbyte.Gruber a.play
+    background: url('/images/Gruber.png') top left no-repeat
