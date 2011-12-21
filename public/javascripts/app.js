@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Wed, 21 Dec 2011 05:48:05 GMT from
+/* DO NOT MODIFY. This file was compiled Wed, 21 Dec 2011 22:01:28 GMT from
  * /Users/swilliams/code/5by5Sounds/app/coffeescripts/app.coffee
  */
 
@@ -11,7 +11,7 @@
     var bytes;
     bytes = [
       new app.SoundByte({
-        title: 'Gruber Eating',
+        title: '*Eating*',
         filename: 'gruber-eating',
         show: 'The Talk Show',
         url: 'http://5by5.tv/talkshow',
@@ -47,12 +47,6 @@
         url: 'http://5by5.tv/b2w',
         speaker: 'Dan'
       }), new app.SoundByte({
-        title: 'We Make the Internet Work',
-        filename: 'wemaketheinternet',
-        show: 'Back to Work',
-        url: 'http://5by5.tv/b2w',
-        speaker: 'Dan'
-      }), new app.SoundByte({
         title: 'Can I Aks You a Queshon?',
         filename: 'aksquestion',
         show: 'Back to Work',
@@ -64,6 +58,24 @@
         show: 'Back to Work',
         url: 'http://5by5.tv/b2w',
         speaker: 'Merlin'
+      }), new app.SoundByte({
+        title: 'Textbook!',
+        filename: 'textbook',
+        show: 'Hypercritical',
+        url: 'http://5by5.tv/hypercritical',
+        speaker: 'Siracusa'
+      }), new app.SoundByte({
+        title: 'Posse Full of Angry',
+        filename: 'angry-posse',
+        show: 'Back to Work',
+        url: 'http://5by5.tv/b2w',
+        speaker: 'Merlin'
+      }), new app.SoundByte({
+        title: "I Don't Know",
+        filename: 'idontknow',
+        show: 'The Talk Show',
+        url: 'http://5by5.tv/talkshow',
+        speaker: 'Gruber'
       })
     ];
     this.app.SoundBytes.add(bytes);

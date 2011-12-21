@@ -4,7 +4,7 @@ jQuery ->
 
     bytes = [
         new app.SoundByte {
-            title: 'Gruber Eating'
+            title: '*Eating*'
             filename: 'gruber-eating'
             show: 'The Talk Show'
             url: 'http://5by5.tv/talkshow'
@@ -45,13 +45,13 @@ jQuery ->
             url: 'http://5by5.tv/b2w'
             speaker: 'Dan'
         }
-        new app.SoundByte {
-            title: 'We Make the Internet Work'
-            filename: 'wemaketheinternet'
-            show: 'Back to Work'
-            url: 'http://5by5.tv/b2w'
-            speaker: 'Dan'
-        }
+        # new app.SoundByte {
+        #     title: 'We Make the Internet Work'
+        #     filename: 'wemaketheinternet'
+        #     show: 'Back to Work'
+        #     url: 'http://5by5.tv/b2w'
+        #     speaker: 'Dan'
+        # }
         new app.SoundByte {
             title: 'Can I Aks You a Queshon?'
             filename: 'aksquestion'
@@ -65,6 +65,27 @@ jQuery ->
             show: 'Back to Work'
             url: 'http://5by5.tv/b2w'
             speaker: 'Merlin'
+        }
+        new app.SoundByte {
+            title: 'Textbook!'
+            filename: 'textbook'
+            show: 'Hypercritical'
+            url: 'http://5by5.tv/hypercritical'
+            speaker: 'Siracusa'
+        }
+        new app.SoundByte {
+            title: 'Posse Full of Angry'
+            filename: 'angry-posse'
+            show: 'Back to Work'
+            url: 'http://5by5.tv/b2w'
+            speaker: 'Merlin'
+        }
+        new app.SoundByte {
+            title: "I Don't Know"
+            filename: 'idontknow'
+            show: 'The Talk Show'
+            url: 'http://5by5.tv/talkshow'
+            speaker: 'Gruber'
         }
     ]
 

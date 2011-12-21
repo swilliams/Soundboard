@@ -2,7 +2,7 @@ body {
   background: url("/images/batthern.png") top left repeat; }
 
 div.hero-unit {
-  background: #f1f7e2; }
+  background: #fafafa; }
 
 h1#page-title {
   font-size: 55px; }
@@ -13,7 +13,7 @@ div.soundbyte {
   text-align: center;
   position: relative; }
   div.soundbyte .title {
-    background: #f1f7e2;
+    background: #fafafa;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -46,9 +46,12 @@ div.soundbyte.Merlin a.play {
 div.soundbyte.Gruber a.play {
   background: url("/images/Gruber.png") top left no-repeat; }
 
+div.soundbyte.Siracusa a.play {
+  background: url("/images/Siracusa.png") top left no-repeat; }
+
 footer {
   background: #202b30;
-  color: #f1f7e2;
+  color: #fafafa;
   height: 300px;
   border-top: 10px solid #4e7178; }
   footer a {
@@ -57,14 +60,14 @@ footer {
     color: #74c0cf;
     text-decoration: underline; }
   footer h3 {
-    color: #f1f7e2; }
+    color: #fafafa; }
 
 .triangle-isosceles {
   position: relative;
   padding: 15px;
   margin: 1em 0 3em;
   color: black;
-  background: #f1f7e2;
+  background: #fafafa;
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#f9d835), to(#f3961c));
   background: -moz-linear-gradient(#f9d835, #f3961c);
   background: -o-linear-gradient(#f9d835, #f3961c);
@@ -80,6 +83,6 @@ footer {
   left: 95px;
   border-width: 15px 15px 0;
   border-style: solid;
-  border-color: #f1f7e2 transparent;
+  border-color: #fafafa transparent;
   display: block;
   width: 0; }
