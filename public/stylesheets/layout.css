@@ -1,9 +1,11 @@
+body {
+  background: url("/images/batthern.png") top left repeat; }
+
 h1#page-title {
   font-size: 55px; }
 
 div.soundbyte {
   height: 200px;
-  background: #dddddd;
   margin-bottom: 20px;
   text-align: center;
   position: relative; }
