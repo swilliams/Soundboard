@@ -25,11 +25,24 @@
 
   <!-- CSS: implied media="all" -->
   <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/layout.css">
+
 
   <!-- scripts -->
   <script src="javascripts/Vendor/jquery-1.7.1.js"></script>
   <script src="javascripts/Vendor/jquery.jplayer.min.js"></script>
   <script src="javascripts/Vendor/modernizr-2.0.6.js"></script>
+  <script src="javascripts/Vendor/underscore.js"></script>
+  <script src="javascripts/Vendor/backbone.js"></script>
+  <script src="javascripts/Vendor/handlebars-1.0.0.beta.4.js"></script>
+
+
+  <script src="javascripts/app/util.js"></script>
+  <script src="javascripts/app/models.js"></script>
+  <script src="javascripts/app/collections.js"></script>
+  <script src="javascripts/app/views.js"></script>
+  <script src="javascripts/app/routers.js"></script>
+
   <script src="javascripts/app.js"></script>
   <!-- end scripts -->
 
@@ -37,9 +50,20 @@
 
 <body>
 
+    <script type="text/template" id="soundbyte_template">
+        <div class="span4 soundbyte" data-file="{{filename}}">
+            <h2>{{title}}</h2>
+            <a href="#play" class="play">Play</a>
+            <cite><a href="{{url}}">{{show}}</cite>
+            <div id="player-{{filename}}"></div>
+        </div>
+
+    </script>
+
   <div class="container">
       <div class="hero-unit">
           <h1>The <span class="un">Unofficial</span> 5by5 Soundboard</h1>
+          <h5>(Of Doom)</h5>
       </div>
 
   <p class="description">
@@ -47,13 +71,7 @@
   </p>
 
 
-    <div class="row">
-        <div class="span4 thing">
-            <h2>Gruber Eating</h2>
-            <a href="#play" class="play">Play</a>
-            <cite>The Talk Show #71</cite>
-            <div id="player1"></div>
-        </div>
+    <div class="row" id="soundbytes">
     </div>
 
   </div> <!--! end of #container -->
