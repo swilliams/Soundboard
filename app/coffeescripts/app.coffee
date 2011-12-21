@@ -53,7 +53,7 @@ jQuery ->
             speaker: 'Dan'
         }
         new app.SoundByte {
-            title: 'Can I Aks You a Question?'
+            title: 'Can I Aks You a Queshon?'
             filename: 'aksquestion'
             show: 'Back to Work'
             url: 'http://5by5.tv/b2w'
@@ -68,7 +68,6 @@ jQuery ->
         }
     ]
 
-    window.bytes = bytes
     @app.SoundBytes.add bytes
 
     @app.router = new app.AppRouter()

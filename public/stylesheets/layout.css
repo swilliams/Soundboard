@@ -35,3 +35,15 @@ div.soundbyte.Merlin a.play {
 
 div.soundbyte.Gruber a.play {
   background: url("/images/Gruber.png") top left no-repeat; }
+
+footer {
+  background: #202b30;
+  color: #f1f7e2;
+  height: 300px; }
+  footer a {
+    color: #74c0cf; }
+  footer a:hover {
+    color: #74c0cf;
+    text-decoration: underline; }
+  footer h3 {
+    color: #f1f7e2; }

@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Wed, 21 Dec 2011 05:22:57 GMT from
+/* DO NOT MODIFY. This file was compiled Wed, 21 Dec 2011 05:48:05 GMT from
  * /Users/swilliams/code/5by5Sounds/app/coffeescripts/app.coffee
  */
 
@@ -53,7 +53,7 @@
         url: 'http://5by5.tv/b2w',
         speaker: 'Dan'
       }), new app.SoundByte({
-        title: 'Can I Aks You a Question?',
+        title: 'Can I Aks You a Queshon?',
         filename: 'aksquestion',
         show: 'Back to Work',
         url: 'http://5by5.tv/b2w',
@@ -66,7 +66,6 @@
         speaker: 'Merlin'
       })
     ];
-    window.bytes = bytes;
     this.app.SoundBytes.add(bytes);
     this.app.router = new app.AppRouter();
     if (Modernizr.history) {
