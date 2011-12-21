@@ -1,6 +1,9 @@
 body {
   background: url("/images/batthern.png") top left repeat; }
 
+div.hero-unit {
+  background: #f1f7e2; }
+
 h1#page-title {
   font-size: 55px; }
 
@@ -9,18 +12,23 @@ div.soundbyte {
   margin-bottom: 20px;
   text-align: center;
   position: relative; }
+  div.soundbyte .title {
+    background: #f1f7e2;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.4); }
   div.soundbyte h3 {
-    line-height: 24px;
-    margin-top: 10px; }
+    line-height: 24px; }
   div.soundbyte a.play {
     display: block;
     width: 48px;
     height: 48px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-top: -24px;
-    margin-left: -24px; }
+    position: relative;
+    top: -20px;
+    margin: 0 auto; }
     div.soundbyte a.play span {
       visibility: hidden; }
   div.soundbyte cite {
@@ -41,7 +49,8 @@ div.soundbyte.Gruber a.play {
 footer {
   background: #202b30;
   color: #f1f7e2;
-  height: 300px; }
+  height: 300px;
+  border-top: 10px solid #4e7178; }
   footer a {
     color: #74c0cf; }
   footer a:hover {
@@ -49,3 +58,28 @@ footer {
     text-decoration: underline; }
   footer h3 {
     color: #f1f7e2; }
+
+.triangle-isosceles {
+  position: relative;
+  padding: 15px;
+  margin: 1em 0 3em;
+  color: black;
+  background: #f1f7e2;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f9d835), to(#f3961c));
+  background: -moz-linear-gradient(#f9d835, #f3961c);
+  background: -o-linear-gradient(#f9d835, #f3961c);
+  background: linear-gradient(#f9d835, #f3961c);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px; }
+
+.triangle-isosceles:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 95px;
+  border-width: 15px 15px 0;
+  border-style: solid;
+  border-color: #f1f7e2 transparent;
+  display: block;
+  width: 0; }
