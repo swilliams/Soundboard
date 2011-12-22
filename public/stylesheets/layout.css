@@ -2,10 +2,18 @@ body {
   background: url("/images/batthern.png") top left repeat; }
 
 div.hero-unit {
-  background: #f2f2f2; }
+  background: #f2f2f2;
+  margin-top: 20px;
+  border: 10px solid #4e7178; }
 
 h1#page-title {
-  font-size: 55px; }
+  font-size: 50px;
+  text-align: center;
+  color: #202b30; }
+
+h5 {
+  text-align: center;
+  color: #cccccc; }
 
 div.soundbyte {
   height: 200px;
