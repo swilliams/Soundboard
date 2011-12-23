@@ -120,6 +120,9 @@ div.soundbyte.Gruber a.play {
 div.soundbyte.Siracusa a.play {
   background: url("/images/Siracusa.png") top left no-repeat; }
 
+div.soundbyte.Marco a.play {
+  background: url("/images/Marco.png") top left no-repeat; }
+
 footer {
   -webkit-box-shadow: inset 0px 3px 10px 0px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: inset 0px 3px 10px 0px rgba(0, 0, 0, 0.4);

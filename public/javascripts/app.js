@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Fri, 23 Dec 2011 15:48:30 GMT from
+/* DO NOT MODIFY. This file was compiled Fri, 23 Dec 2011 16:06:57 GMT from
  * /Users/swilliams/code/5by5Sounds/app/coffeescripts/app.coffee
  */
 
@@ -94,6 +94,12 @@
         show: 'Hypercritical',
         url: 'http://5by5.tv/hypercritical',
         speaker: 'Siracusa'
+      }), new app.SoundByte({
+        title: 'Don\'t Email Me',
+        filename: 'dontemailme',
+        show: 'Build & Analyze',
+        url: 'http://5by5.tv/buildanalyze',
+        speaker: 'Marco'
       })
     ];
     this.app.SoundBytes.add(bytes);
