@@ -88,6 +88,10 @@ div.soundbyte {
   div.soundbyte h3 {
     text-shadow: 0 1px 1px #aaaaaa;
     line-height: 24px; }
+    div.soundbyte h3 .info {
+      font-size: 14px;
+      color: #aaaaaa;
+      text-shadow: 0 0 0; }
   div.soundbyte a.play {
     display: block;
     width: 48px;

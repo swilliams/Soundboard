@@ -87,6 +87,29 @@ jQuery ->
             url: 'http://5by5.tv/talkshow'
             speaker: 'Gruber'
         }
+        new app.SoundByte {
+            title: 'Ugh'
+            filename: 'ugh'
+            show: 'Hypercritical'
+            url: 'http://5by5.tv/hypercritical'
+            speaker: 'Siracusa'
+        }
+        new app.SoundByte {
+            title: '*Cackle*'
+            filename: 'cackle'
+            show: 'The Talk Show'
+            url: 'http://5by5.tv/talkshow'
+            speaker: 'Gruber'
+        }
+        new app.SoundByte {
+            title: 'TV\'s Fine<br /><span class="info">(John\s 1st Voice!)</span>'
+            filename: 'tvs-fine'
+            show: 'Hypercritical'
+            url: 'http://5by5.tv/hypercritical'
+            speaker: 'Siracusa'
+        }
+        
+        
     ]
 
     @app.SoundBytes.add bytes

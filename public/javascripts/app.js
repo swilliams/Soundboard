@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Wed, 21 Dec 2011 22:01:28 GMT from
+/* DO NOT MODIFY. This file was compiled Fri, 23 Dec 2011 15:48:30 GMT from
  * /Users/swilliams/code/5by5Sounds/app/coffeescripts/app.coffee
  */
 
@@ -76,6 +76,24 @@
         show: 'The Talk Show',
         url: 'http://5by5.tv/talkshow',
         speaker: 'Gruber'
+      }), new app.SoundByte({
+        title: 'Ugh',
+        filename: 'ugh',
+        show: 'Hypercritical',
+        url: 'http://5by5.tv/hypercritical',
+        speaker: 'Siracusa'
+      }), new app.SoundByte({
+        title: '*Cackle*',
+        filename: 'cackle',
+        show: 'The Talk Show',
+        url: 'http://5by5.tv/talkshow',
+        speaker: 'Gruber'
+      }), new app.SoundByte({
+        title: 'TV\'s Fine<br /><span class="info">(John\s 1st Voice!)</span>',
+        filename: 'tvs-fine',
+        show: 'Hypercritical',
+        url: 'http://5by5.tv/hypercritical',
+        speaker: 'Siracusa'
       })
     ];
     this.app.SoundBytes.add(bytes);
