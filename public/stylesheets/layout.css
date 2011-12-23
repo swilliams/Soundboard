@@ -1,19 +1,27 @@
+@font-face {
+  font-family: "MolotRegular";
+  src: url("/fonts/Molot.eot");
+  src: local("/fonts/Molot"), local("/fonts/Molot"), url("/fonts/Molot/fonts/Molot.ttf") format("truetype"), url("/fonts/Molot.svg#Molot") format("svg"); }
+
 body {
   background: url("/images/batthern.png") top left repeat; }
 
 div.hero-unit {
-  background: #f2f2f2;
+  background: transparent;
+  color: #202b30;
   margin-top: 20px;
-  border: 10px solid #4e7178; }
+  padding: 40px; }
 
 h1#page-title {
   font-size: 50px;
   text-align: center;
-  color: #202b30; }
+  color: #74c0cf;
+  font-family: "MolotRegular", "Georgia", Helvetica, Arial;
+  text-shadow: 1px 1px 0 #202b30, 2px 2px 0px #4e7178, 3px 3px 0px #4e7178, 4px 4px 0px #4e7178, 5px 5px 0px #4e7178, 6px 6px 0px #4e7178, 7px 7px 0px #4e7178; }
 
 h5 {
   text-align: center;
-  color: #cccccc; }
+  color: #74c0cf; }
 
 div.soundbyte {
   height: 200px;
@@ -78,6 +86,7 @@ div.soundbyte {
           -o-transition: all 150ms ease-in-out;
           transition: all 150ms ease-in-out; }
   div.soundbyte h3 {
+    text-shadow: 0 1px 1px #aaaaaa;
     line-height: 24px; }
   div.soundbyte a.play {
     display: block;
@@ -89,6 +98,7 @@ div.soundbyte {
     div.soundbyte a.play span {
       visibility: hidden; }
   div.soundbyte cite {
+    text-shadow: 0 1px 1px white;
     display: block;
     position: absolute;
     bottom: 10px;

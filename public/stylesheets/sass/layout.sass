@@ -25,22 +25,32 @@ $med: #4FA9B8
 @mixin textshadow($h, $v, $blur, $color)
     text-shadow: $h $v $blur $color
 
+
+@font-face
+    font-family: "MolotRegular" 
+    src: url('/fonts/Molot.eot')
+    src: local("/fonts/Molot"), local("/fonts/Molot"), url('/fonts/Molot/fonts/Molot.ttf') format("truetype"), url('/fonts/Molot.svg#Molot') format("svg")
+
 body
     background: url('/images/batthern.png') top left repeat
 
 div.hero-unit
-    background: $lightest
+    background: transparent
+    color: $darkest
     margin-top: 20px
-    border: 10px solid $dark
+    padding: 40px
 
 h1#page-title
     font-size: 50px
     text-align: center
-    color: $darkest
+    color: $light
+    font-family: "MolotRegular", "Georgia", Helvetica, Arial
+    text-shadow: 1px 1px 0 $darkest, 2px 2px 0px $dark, 3px 3px 0px $dark, 4px 4px 0px $dark, 5px 5px 0px $dark, 6px 6px 0px $dark, 7px 7px 0px $dark
+
 
 h5
     text-align: center
-    color: #ccc
+    color: $light
 
 div.soundbyte
     height: 200px
@@ -90,6 +100,7 @@ div.soundbyte
 
 
     h3
+        @include textshadow(0, 1px, 1px, #aaa)
         line-height: 24px
 
     a.play
@@ -104,6 +115,7 @@ div.soundbyte
             visibility: hidden
 
     cite
+        @include textshadow(0, 1px, 1px, #fff)
         display: block
         position: absolute
         bottom: 10px
