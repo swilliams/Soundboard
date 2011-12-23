@@ -22,6 +22,9 @@ $med: #4FA9B8
     -o-transition: all $time ease-in-out
     transition: all $time ease-in-out
 
+@mixin textshadow($h, $v, $blur, $color)
+    text-shadow: $h $v $blur $color
+
 body
     background: url('/images/batthern.png') top left repeat
 
@@ -120,7 +123,9 @@ div.soundbyte.Siracusa a.play
     background: url('/images/Siracusa.png') top left no-repeat
 
 footer
-    background: $darkest
+    @include box_shadow(3px, inset 0px, 10px, rgba(0,0,0,0.4))
+    @include textshadow(0, 1px, 1px, #000)
+    background: $darkest url('/images/boxes.png')
     color: $lightest
     height: 300px
     border-top: 10px solid $dark

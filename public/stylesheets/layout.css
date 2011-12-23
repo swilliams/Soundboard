@@ -107,7 +107,11 @@ div.soundbyte.Siracusa a.play {
   background: url("/images/Siracusa.png") top left no-repeat; }
 
 footer {
-  background: #202b30;
+  -webkit-box-shadow: inset 0px 3px 10px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0px 3px 10px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0px 3px 10px 0px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 1px 1px black;
+  background: #202b30 url("/images/boxes.png");
   color: #f2f2f2;
   height: 300px;
   border-top: 10px solid #4e7178; }
