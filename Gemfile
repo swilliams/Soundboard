@@ -1,3 +1,7 @@
 source :rubygems
-gem 'sinatra'
 gem 'json'
+gem "rack"
+gem "sinatra"
+gem "barista"
+gem "sass"
+

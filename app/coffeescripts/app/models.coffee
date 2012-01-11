@@ -11,6 +11,7 @@ class SoundByte extends Backbone.Model
                 )
             swfPath: "/javascripts/Vendor"
             supplied: "m4a, oga"
+            preload: 'auto'
         )
 
 @app = window.app ? {}
