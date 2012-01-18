@@ -6,7 +6,6 @@ class SoundBoardApp < Sinatra::Base
 
     disable :logging
     set :root, File.dirname(__FILE__) + "/../"
-    enable :sessions
 
     RETURN_HTTP_ERRORS_FOR_CLIENT_DEBUGGING = false
 

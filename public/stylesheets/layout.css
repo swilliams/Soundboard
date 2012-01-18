@@ -123,6 +123,21 @@ div.soundbyte.Siracusa a.play {
 div.soundbyte.Marco a.play {
   background: url("/images/Marco.png") top left no-repeat; }
 
+#need_help {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 200px;
+  background: rgba(250, 250, 250, 0.8);
+  padding: 5px 10px; }
+  #need_help h2 {
+    font-size: 1.1em;
+    text-align: center;
+    cursor: pointer; }
+  #need_help p {
+    font-size: 0.8em;
+    display: none; }
+
 footer {
   -webkit-box-shadow: inset 0px 3px 10px 0px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: inset 0px 3px 10px 0px rgba(0, 0, 0, 0.4);

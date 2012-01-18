@@ -21,6 +21,28 @@ jQuery ->
             event.preventDefault()
 
 
+    class HelpView extends Backbone.View
+        el: '#need_help'
+        isExpanded: false
+
+        initialize: ->
+
+        events:
+            'click h2' : 'toggleExpando'
+
+        # DOM interaction
+        contract: ->
+            @$('p').slideUp('fast')
+
+        expand: ->
+            @$('p').slideDown('fast')
+        # end DOM interaction
+
+        toggleExpando: ->
+            if @isExpanded then @contract() else @expand()
+            @isExpanded = not @isExpanded
+
         
     @app = window.app ? {}
     @app.SoundBytesView = SoundBytesView
+    @app.HelpView = HelpView
