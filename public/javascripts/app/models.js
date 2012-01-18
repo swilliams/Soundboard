@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Thu, 29 Dec 2011 22:00:03 GMT from
+/* DO NOT MODIFY. This file was compiled Wed, 18 Jan 2012 21:59:21 GMT from
  * /Users/swilliams/code/5by5Sounds/app/coffeescripts/app/models.coffee
  */
 
@@ -23,12 +23,13 @@
       return $("#player-" + this.attributes.filename).jPlayer({
         ready: function(event) {
           return $(this).jPlayer('setMedia', {
-            mp3: "/audio/" + self.attributes.filename + ".mp3",
+            m4a: "/audio/" + self.attributes.filename + ".m4a",
             oga: "/audio/" + self.attributes.filename + ".ogg"
           });
         },
         swfPath: "/javascripts/Vendor",
-        supplied: "mp3, oga"
+        supplied: "m4a, oga",
+        preload: 'auto'
       });
     };
 

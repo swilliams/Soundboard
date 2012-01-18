@@ -17,3 +17,5 @@ class SoundByte extends Backbone.Model
 @app = window.app ? {}
 @app.SoundByte = SoundByte
 
+
+
