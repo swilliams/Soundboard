@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Fri, 23 Dec 2011 16:06:57 GMT from
+/* DO NOT MODIFY. This file was compiled Sun, 22 Apr 2012 21:20:50 GMT from
  * /Users/swilliams/code/5by5Sounds/app/coffeescripts/app.coffee
  */
 
@@ -8,7 +8,7 @@
   this.app = (_ref = window.app) != null ? _ref : {};
 
   jQuery(function() {
-    var bytes;
+    var bytes, d;
     bytes = [
       new app.SoundByte({
         title: '*Eating*',
@@ -100,17 +100,37 @@
         show: 'Build & Analyze',
         url: 'http://5by5.tv/buildanalyze',
         speaker: 'Marco'
+      }), new app.SoundByte({
+        title: 'Like an ANIMAL',
+        filename: 'animal',
+        show: 'Hypercritical',
+        url: 'http://5by5.tv/hypercritical',
+        speaker: 'Siracusa'
+      }), new app.SoundByte({
+        title: 'Evacuate!',
+        filename: 'evacuate',
+        show: 'Hypercritical',
+        url: 'http://5by5.tv/hypercritical',
+        speaker: 'Siracusa'
+      }), new app.SoundByte({
+        title: 'Bleu-Toot',
+        filename: 'bleutoot',
+        show: 'Back to Work',
+        url: 'http://5by5.tv/b2w',
+        speaker: 'Merlin'
       })
     ];
     this.app.SoundBytes.add(bytes);
     this.app.router = new app.AppRouter();
     if (Modernizr.history) {
-      return Backbone.history.start({
+      Backbone.history.start({
         pushState: true
       });
     } else {
-      return Backbone.history.start();
+      Backbone.history.start();
     }
+    d = new Date();
+    return $('#copy_year').html(d.getFullYear());
   });
 
 }).call(this);

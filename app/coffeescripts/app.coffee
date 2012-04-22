@@ -115,7 +115,27 @@ jQuery ->
             url: 'http://5by5.tv/buildanalyze'
             speaker: 'Marco'
         }
+
+        new app.SoundByte
+            title: 'Like an ANIMAL'
+            filename: 'animal'
+            show: 'Hypercritical'
+            url: 'http://5by5.tv/hypercritical'
+            speaker: 'Siracusa'
         
+        new app.SoundByte
+            title: 'Evacuate!'
+            filename: 'evacuate'
+            show: 'Hypercritical'
+            url: 'http://5by5.tv/hypercritical'
+            speaker: 'Siracusa'
+        
+        new app.SoundByte
+            title: 'Bleu-Toot'
+            filename: 'bleutoot'
+            show: 'Back to Work'
+            url: 'http://5by5.tv/b2w'
+            speaker: 'Merlin'
         
     ]
 
@@ -126,5 +146,8 @@ jQuery ->
         Backbone.history.start({pushState: true})
     else
         Backbone.history.start()
+
+    d = new Date()
+    $('#copy_year').html d.getFullYear()
     
 
