@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Sun, 22 Apr 2012 21:20:50 GMT from
+/* DO NOT MODIFY. This file was compiled Mon, 23 Apr 2012 22:04:09 GMT from
  * /Users/swilliams/code/5by5Sounds/app/coffeescripts/app.coffee
  */
 
@@ -115,6 +115,12 @@
       }), new app.SoundByte({
         title: 'Bleu-Toot',
         filename: 'bleutoot',
+        show: 'Back to Work',
+        url: 'http://5by5.tv/b2w',
+        speaker: 'Merlin'
+      }), new app.SoundByte({
+        title: 'Turns Out',
+        filename: 'turnsout',
         show: 'Back to Work',
         url: 'http://5by5.tv/b2w',
         speaker: 'Merlin'
