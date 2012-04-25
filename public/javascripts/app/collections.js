@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Wed, 21 Dec 2011 21:43:30 GMT from
+/* DO NOT MODIFY. This file was compiled Wed, 25 Apr 2012 18:00:03 GMT from
  * /Users/swilliams/code/5by5Sounds/app/coffeescripts/app/collections.coffee
  */
 

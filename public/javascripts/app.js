@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Mon, 23 Apr 2012 22:04:09 GMT from
+/* DO NOT MODIFY. This file was compiled Wed, 25 Apr 2012 18:00:03 GMT from
  * /Users/swilliams/code/5by5Sounds/app/coffeescripts/app.coffee
  */
 
@@ -124,6 +124,12 @@
         show: 'Back to Work',
         url: 'http://5by5.tv/b2w',
         speaker: 'Merlin'
+      }), new app.SoundByte({
+        title: 'Maximum Deflection in All Directions',
+        filename: 'maximumdeflection',
+        show: 'Hypercritical',
+        url: 'http://5by5.tv/hypercritical',
+        speaker: 'Siracusa'
       })
     ];
     this.app.SoundBytes.add(bytes);
