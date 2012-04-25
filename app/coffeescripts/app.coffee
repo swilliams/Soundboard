@@ -143,6 +143,13 @@ jQuery ->
             show: 'Back to Work'
             url: 'http://5by5.tv/b2w'
             speaker: 'Merlin'
+            
+        new app.SoundByte
+            title: 'Maximum Deflection in All Directions'
+            filename: 'maximumdeflection'
+            show: 'Hypercritical'
+            url: 'http://5by5.tv/hypercritical'
+            speaker: 'Siracusa'
     ]
 
     @app.SoundBytes.add bytes
