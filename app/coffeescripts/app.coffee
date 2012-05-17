@@ -145,11 +145,19 @@ jQuery ->
             speaker: 'Merlin'
             
         new app.SoundByte
+            title: 'So...'
+            filename: 'merlin-so'
+            show: 'Back to Work'
+            url: 'http://5by5.tv/b2w'
+            speaker: 'Merlin'
+        
+        new app.SoundByte
             title: 'Maximum Deflection in All Directions'
-            filename: 'maximumdeflection'
+            filename: 'siracusa-maximum-deflection'
             show: 'Hypercritical'
             url: 'http://5by5.tv/hypercritical'
             speaker: 'Siracusa'
+            
     ]
 
     @app.SoundBytes.add bytes
