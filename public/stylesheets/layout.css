@@ -107,6 +107,12 @@ div.soundbyte {
     position: absolute;
     bottom: 10px;
     width: 100%; }
+  div.soundbyte cite.ringtone {
+    text-shadow: 0 1px 1px white;
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    width: 100%; }
 
 div.soundbyte.Dan a.play {
   background: url("/images/Dan.png") top left no-repeat; }
